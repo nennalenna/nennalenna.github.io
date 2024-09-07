@@ -1,104 +1,221 @@
 body {
-    background-color: rgb(231, 186, 242);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    font-size: 1.5vw;
-} 
+    /* Main page */
+    background-color: rgb(225, 202, 238);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 
-#logo{
-    margin: 10px;
-    padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    color: white;
-    width: 22%;
-    border-radius: 5%;
-    text-shadow: 
-        -1px -1px 0px black,  /* Top-left shadow */
-        1px -1px 0px black,   /* Top-right shadow */
-        -1px 1px 0px black,   /* Bottom-left shadow */
-        1px 1px 0px black;    /* Bottom-right shadow */
 }
 
-ul{
-    margin: 0px;
+/* Logo */
+#logo {
+    margin-bottom: 1.5em;
+    margin-left: 33em;
+    transform: scale(1.5); /* Scale the image to 150% of its original size */
 }
 
- body > header {
-    background-color: rgb(176, 118, 190);
-    color: rgb(101, 36, 119);
-    display: flex;
-    height: 12vh;
-    align-items: center;
-    justify-content: space-around;
+/* navigation */
+.socials {
+    text-align: right;
+    list-style: none;
+    margin-right: 15em;
+    text-align: center;
+    margin-top: 4em;
 }
 
-#nav-ul {
-    display: flex
+/* Sidebar */
+
+body>div>nav>ul {
+    list-style: none;
+    text-decoration: none;
+    margin-top: -3em;
 }
 
-#nav-ul > li {
+#sidebar-image {
+    width: 25px;
+    height: auto;
+}
+
+.navbutton {
+    color: rgb(131, 105, 156);
+    text-decoration: none;
+}
+
+.sidebar {
+    background-color: white;
+    /* Set sidebar background color */
+    width: 25px;
+    /* Define the width of the sidebar */
+    height: 100vh;
+    /* Make the sidebar span the full height of the viewport */
     padding: 15px;
-    margin: 16px;
+    /* Add padding for the content inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Optional: add a shadow for better separation */
+    position: fixed;
+    /* Fix the sidebar in place so it stays visible on scroll */
+    left: 0;
+    /* Align the sidebar to the left side */
+    top: 0;
+    /* Start the sidebar at the top of the page */
+    overflow: hidden;
+    /* Hide the menu items initially */
+    transition: width 0.3s ease;
+    /* Smooth transition when expanding */
 }
 
-body > header > nav > ul {
+.sidebar-menu {
     list-style: none;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stack menu items vertically */
+    align-items: center;
+    /* Center the icons and text */
 }
 
-.navbutton{
+.sidebar-menu li {
+    width: 100%;
+    /* Ensure each list item takes full width */
+    margin: 15px 0;
+    text-align: center;
+    /* Center the text */
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: rgb(131, 105, 156);
+    display: block;
+    padding: 10px 15px;
+    /* Padding for better clickable area */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    opacity: 0;
+    /* Hide the text by default */
+    visibility: hidden;
+    /* Make the text not take up space */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* Smooth transition for visibility */
+}
+
+/* Hover effect to expand the sidebar */
+.sidebar:hover {
+    width: 250px;
+    /* Expand width on hover */
+}
+
+.sidebar:hover .sidebar-menu a {
+    opacity: 1; /* Make the text visible */
+    visibility: visible; /* Ensure the text appears */
+    text-align: left; /* Align text to the left when expanded */
+    padding-left: 20px; /* Add padding to the left for better spacing */
+}
+
+/* Main page */
+
+article {
+    background-color: rgba(255,255,255,0.75);;
+    margin: 2em;
+    padding: 2em;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    margin-right: 0em;
+    border-radius: 1.5%;
+}
+
+.main-content {
+    margin-left: 25px;
+    /* Offset the main content by the sidebar's width */
+    padding: 20px;
+    /* Add some padding to the main content */
+    flex-grow: 1;
+    /* Allow the main content to take up the remaining space */
+    min-height: 100vh;
+    /* Ensure the content spans the full height */
+    transition: margin-left 0.3s ease; /* Smooth transition for content shift */
+    color: rgb(131, 105, 156);
+}
+
+#Home-title {
+    text-align: center;
+    font-family: "Satisfy", sans-serif ;
+    font-size: 100px;
+
+}
+
+#main-p {
+    margin-left: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+/* gallery and image links */
+#image_grid {
+    margin-left: 3em;
+}
+
+.gallery {
+    width: 380px;
+    height: 380px;
+}
+
+#Illustrations-title {
+    margin-left: 5.5em;
+}
+
+#Live2d-ill {
+    margin-left: 5em;
+}
+
+#Live2D-rig {
+    margin-left: 5.5em;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(131, 105, 156);
+    padding: 4px;
     color: white;
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+body>footer a {
     text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 8%;
+    color: white;
+    margin: 80px;
 }
 
-body > main article {
-    width: 70%;
-    margin: auto;
+.footer_ul {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    /* gap: 80px; */
 }
 
-#main-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-#main-content > div {
-    width: 70%;
-}
-
-form {
-    text-align: center;
-}
-
-h2{
-    text-align: center;
-}
-
-.article_name {
-    background-color: azure;
-}
-
-body > footer {
-    background-color: rgb(176, 118, 190);
-    display: flex;
-}
-
-#footer-ul {
-    display: flex;
+#footer-div {
     list-style: none;
 }
 
-#footer-ul > div > li {
-    margin-left: 12px;
+h2 {
+    margin-left: 1.5em;
 }
 
-#footer-ul > div > li > a {
-    text-decoration: none;
-    color: white;
+#footer-about {
+    margin-top: 1em;
 }
 
-img{
-    border-radius: 50%;
+#footer-liverig {
+    margin-top: 1em;
+}
+
+#footer-contact {
+    margin-top: 1em;
+}
+
+#copyright {
+    grid-column: span 3;
+    /* Span the entire width of the grid */
+    text-align: right;
+    margin-right: 1.5em;
 }
