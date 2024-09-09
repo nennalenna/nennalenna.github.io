@@ -219,3 +219,28 @@ h2 {
     text-align: right;
     margin-right: 1.5em;
 }
+
+/* page 1 */
+#main-title {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    margin-top: 2em;
+}
+
+.main1 {
+    text-align: center;
+    color: rgb(131, 105, 156);
+    margin-left: 1.5em;
+    margin-right: 0.5em;
+    margin-top: 2em;
+}
+
+#wip-img {
+    margin-top: 5em;
+}
+
+/* Footer 1 */
+.footer1 {
+    margin-top: 10em;
+}
