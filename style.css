@@ -42,25 +42,15 @@ body>div>nav>ul {
 
 .sidebar {
     background-color: white;
-    /* Set sidebar background color */
     width: 25px;
-    /* Define the width of the sidebar */
     height: 100vh;
-    /* Make the sidebar span the full height of the viewport */
     padding: 15px;
-    /* Add padding for the content inside the sidebar */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    /* Optional: add a shadow for better separation */
     position: fixed;
-    /* Fix the sidebar in place so it stays visible on scroll */
     left: 0;
-    /* Align the sidebar to the left side */
     top: 0;
-    /* Start the sidebar at the top of the page */
     overflow: hidden;
-    /* Hide the menu items initially */
     transition: width 0.3s ease;
-    /* Smooth transition when expanding */
 }
 
 .sidebar-menu {
@@ -69,17 +59,13 @@ body>div>nav>ul {
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* Stack menu items vertically */
     align-items: center;
-    /* Center the icons and text */
 }
 
 .sidebar-menu li {
     width: 100%;
-    /* Ensure each list item takes full width */
     margin: 15px 0;
     text-align: center;
-    /* Center the text */
 }
 
 .sidebar-menu a {
@@ -87,28 +73,21 @@ body>div>nav>ul {
     color: rgb(131, 105, 156);
     display: block;
     padding: 10px 15px;
-    /* Padding for better clickable area */
     white-space: nowrap;
-    /* Prevent text from wrapping */
     opacity: 0;
-    /* Hide the text by default */
     visibility: hidden;
-    /* Make the text not take up space */
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    /* Smooth transition for visibility */
 }
 
-/* Hover effect to expand the sidebar */
 .sidebar:hover {
     width: 250px;
-    /* Expand width on hover */
 }
 
 .sidebar:hover .sidebar-menu a {
-    opacity: 1; /* Make the text visible */
-    visibility: visible; /* Ensure the text appears */
-    text-align: left; /* Align text to the left when expanded */
-    padding-left: 20px; /* Add padding to the left for better spacing */
+    opacity: 1; 
+    visibility: visible;
+    text-align: left; 
+    padding-left: 20px; 
 }
 
 /* Main page */
@@ -125,14 +104,10 @@ article {
 
 .main-content {
     margin-left: 25px;
-    /* Offset the main content by the sidebar's width */
     padding: 20px;
-    /* Add some padding to the main content */
     flex-grow: 1;
-    /* Allow the main content to take up the remaining space */
     min-height: 100vh;
-    /* Ensure the content spans the full height */
-    transition: margin-left 0.3s ease; /* Smooth transition for content shift */
+    transition: margin-left 0.3s ease;
     color: rgb(131, 105, 156);
 }
 
@@ -147,6 +122,20 @@ article {
     margin-left: 1.5em;
     margin-top: 2em;
     margin-bottom: 5em;
+}
+
+/* Button */
+#button {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(131, 105, 156);
+    margin: 2em;
+    margin-left: 30em;
+    margin-right: 30em;
+    margin-top: -3em;
+    padding: 1em;
+    border-radius: 5%;
 }
 
 /* gallery and image links */
@@ -224,7 +213,7 @@ h2 {
 #main-title {
     text-align: center;
     color: white;
-    font-size: xx-large;
+    font-size: xxx-large;
     margin-top: 2em;
 }
 
@@ -244,3 +233,83 @@ h2 {
 .footer1 {
     margin-top: 10em;
 }
+
+/* Page 2 */
+#main-title2 {
+    text-align: center;
+    color: white;
+    font-size: xxx-large;
+    margin-top: .85em;
+}
+
+.main-title2 {
+    background-color: rgb(131, 105, 156, 0.75);
+    margin-top: 1em;
+    margin-bottom: em;
+    padding-top: .007em;
+    padding-bottom: .007em;
+}
+
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+.main2 {
+    margin-left: 1.5em;
+    margin-right: 1em;
+}
+
+#sub-title {
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    margin-bottom: 1em;
+    background-color: rgb(131, 105, 156);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    /* border-radius: 10%; */
+}
+
+/* Style the image grid */
+.image-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3cap;
+  }
+  
+  .gride-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+  }
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Adjust the max size of the image */
+    max-height: 90%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }

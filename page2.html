@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <!-- sidebar content here -->
+        <img id="sidebar-image" src="Images/direction.png" alt="sidebar icon">
+        <nav>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="index.html" class="navbutton">Home</a>
+                </li>
+                <li>
+                    <a href="page1.html" class="navbutton">About Me</a>
+                </li>
+                <li>
+                    <a href="page2.html" class="navbutton">Illustrations</a>
+                </li>
+                <li>
+                    <a href="page1.html" class="navbutton">Live2d Rigging</a>
+                </li>
+                <li>
+                    <a href="page1.html" class="navbutton">Live2d Illustrations</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-page">
+        <main class="main-title2">
+            <header id="main-title2"><strong>Illustration</strong></header>
+            <h3 id="Illustration2">Featuring my most recent Illustration pieces over the time from headshots to
+                fullbody, to streaming illustration such as emotes and animations</h3>
+        </main>
+        <main class="main2">
+            <article>
+                <div>
+                    <main>
+                        <div>
+                            <header id="sub-title">
+                                2024
+                            </header>
+                            <div id="image_grid2" class="pure-g">
+                                <div class="pure-u-1-3">
+                                    <img id="thumbnail9" class="gride-image" src="Images/Tonikawa.png" alt="image 9"
+                                        width="250px" onclick="openModal('Images/Tonikawa.png')">
+                                </div>
+                                <div class="pure-u-1-3">
+                                    <img id="thumbnail1" class="gride-image" src="Images/Mermay_Nenna.png" alt="image 1"
+                                        width="250px" onclick="openModal('Images/Mermay_Nenna.png')">
+                                </div>
+
+                                <div class="pure-u-1-3">
+                                    <img id="thumbnail2" class="gride-image" src="Images/Nenna_Sleepy.png" alt="image 2"
+                                        width="250px" onclick="openModal('Images/Nenna_Sleepy.png')">
+                                </div>
+
+                                <div class="pure-u-1-3">
+                                    <img id="thumbnail3" class="gride-image" src="Images/NennaVerse_Eye_Banner.png"
+                                        alt="image 3" onclick="openModal('Images/NennaVerse_Eye_Banner.png')">
+                                </div>
+
+                                <div class="pure-u-1-3">
+                                    <img id="thumbnail7" class="gride-image" src="Images/Sylven_OC.png" alt="image 7"
+                                        width="px" onclick="openModal('Images/Sylven_OC.png')">
+                                </div>
+
+                                <div class="pure-u-1-3">
+                                    <img id="thumbnail4" class="gride-image" src="Images/My_OC_Art.jpg" alt="image 4"
+                                        width="px" onclick="openModal('Images/My_OC_Art.jpg')">
+                                </div>
+
+                                <div class="pure-u-1-3">
+                                    <img id="image4" class="gride-image" src="Images/DTIYS.png" alt="image 5" width="px"
+                                        onclick="openModal('Images/DTIYS.png')">
+
+                                </div>
+
+                                <div class="pure-u-1-3">
+                                    <img id="image5" class="gride-image" src="Images/Weapon_of_Love.png" alt="image 6"
+                                        width="px" onclick="openModal('Images/Weapon_of_Love.png')">
+                                </div>
+                            </div>
+                            <div>
+                                <header id="sub-title">
+                                    2023
+                            </div>
+
+                            <div id="image_grid" class="pure-g">
+                                <div class="pure-u-1-3">
+                                    <img id="image6" class="gride-image" src="Images/sealDTIYS.PNG" alt="image 8"
+                                        width="px" onclick="openModal('Images/sealDTIYS.PNG')">
+                                </div>
+
+                                <div class="pure-u-1-3">
+                                    <img id="image7" class="gride-image" src="Images/sprout_full.png" alt="image 7"
+                                        width="px" onclick="openModal('Images/sprout_full.png')">
+
+                                </div>
+
+                                <div class="pure-u-1-3">
+                                    <img id="image8" class="gride-image" src="Images/" alt="" width="px">
+                                </div>
+
+                                <!-- Modal to display full-size image -->
+                                <div id="modal" class="modal">
+                                    <span class="close" onclick="closeModal()">&times;</span>
+                                    <img class="modal-content" id="fullImage">
+                                </div>
+                            </div>
+                    </main>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <img src="" alt="">
+                    <div>
+                    </div>
+                    <img src="" alt="">
+                    <div>
+
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer id="footer">
+        <h2>NennaVerse</h2>
+        <section>
+            <nav>
+                <ul class="footer-ul">
+                    <div id="footer-div" class="pure-g">
+                        <div id="footer1" class="pure-u-1-3">
+                            <li id="footer-home"><a href="index.html">Home</a></li>
+                            <li id="footer-about"><a href="page1.html">About Me</a></li>
+                        </div>
+
+                        <div id="footer2" class="pure-u-1-3">
+                            <li id="footer-ill"><a href="page2.html">Illustrations</a></li>
+                            <li id="footer-liverig"><a href="page1.html">Live2d Rigging</a></li>
+                        </div>
+
+                        <div id="footer3" class="pure-u-1-3">
+                            <li id="footer-livill"><a href="page1.html">Live2d Illustrations</a></li>
+                            <!-- Need to have social media links here with logo -->
+                            <li id="footer-contact"><a href="page1.html">Contact us</a></li>
+                        </div>
+                    </div>
+                    <div>
+                        <nav>
+                            <ul>
+                                <li class="socials">
+                                    <a href="https://discord.com/users/1246253356838682635" target="_blank">
+                                        <img id="Discord" src="Images/discord_icon.png" alt="Discord Image"
+                                            width="30px">
+                                    </a>
+                                    <a href="https://x.com/ItsNennaVerse" target="_blank">
+                                        <img id="X" src="Images/twitter_icon.png" alt="X Image" width="30px">
+                                    </a>
+                                    <a href="https://vgen.co/ItsNennaVerse" target="_blank">
+                                        <img id="VGen" src="Images/VGen.png" alt="VGen Image" width="35px">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <p id="copyright">&copy; 2024 NennaVerse</p>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+
+</html>
