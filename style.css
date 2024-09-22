@@ -126,16 +126,22 @@ article {
 
 /* Button */
 #button {
-    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
     background-color: rgb(131, 105, 156);
-    margin: 2em;
-    margin-left: 30em;
-    margin-right: 30em;
-    margin-top: -3em;
-    padding: 1em;
-    border-radius: 5%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 4em;
+    margin-top: -10em;
+    margin-left: 39em;
+}
+
+#button:hover {
+    background-color: #debcee; /* Darker green on hover */
 }
 
 /* gallery and image links */
