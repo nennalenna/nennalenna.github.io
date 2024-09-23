@@ -10,7 +10,8 @@ body {
 #logo {
     margin-bottom: 1.5em;
     margin-left: 33em;
-    transform: scale(1.5); /* Scale the image to 150% of its original size */
+    transform: scale(1.5);
+    /* Scale the image to 150% of its original size */
 }
 
 /* navigation */
@@ -51,6 +52,8 @@ body>div>nav>ul {
     top: 0;
     overflow: hidden;
     transition: width 0.3s ease;
+    z-index: 1000;
+    /* Higher z-index to ensure it’s in front */
 }
 
 .sidebar-menu {
@@ -84,16 +87,17 @@ body>div>nav>ul {
 }
 
 .sidebar:hover .sidebar-menu a {
-    opacity: 1; 
+    opacity: 1;
     visibility: visible;
-    text-align: left; 
-    padding-left: 20px; 
+    text-align: left;
+    padding-left: 20px;
 }
 
 /* Main page */
 
 article {
-    background-color: rgba(255,255,255,0.75);;
+    background-color: rgba(255, 255, 255, 0.75);
+    ;
     margin: 2em;
     padding: 2em;
     padding-top: 2em;
@@ -113,7 +117,7 @@ article {
 
 #Home-title {
     text-align: center;
-    font-family: "Satisfy", sans-serif ;
+    font-family: "Satisfy", sans-serif;
     font-size: 100px;
 
 }
@@ -141,7 +145,8 @@ article {
 }
 
 #button:hover {
-    background-color: #debcee; /* Darker green on hover */
+    background-color: #debcee;
+    /* Darker green on hover */
 }
 
 /* gallery and image links */
@@ -200,7 +205,7 @@ h2 {
     margin-top: 1em;
 }
 
-#footer-liverig {
+#footer-livill {
     margin-top: 1em;
 }
 
@@ -283,39 +288,254 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3cap;
-  }
-  
-  .gride-image {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    cursor: pointer;
-  }
+}
 
-/* Modal styles */
+.gride-image {
+    width: 100%;
+    /* Make images take full width of their container */
+    height: 200px;
+    /* Fixed height to crop images */
+    object-fit: cover;
+    /* Crop image to fit */
+    cursor: pointer;
+    /* Pointer cursor for clickable images */
+    transition: transform 0.3s ease;
+    /* Transition effect */
+}
+
 .modal {
     display: none;
+    /* Hidden by default */
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-  }
+    /* Semi-transparent background */
+    justify-content: center;
+    /* Center modal content */
+    align-items: center;
+    /* Center modal content */
+}
 
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%; /* Adjust the max size of the image */
+.modal-content {
+    max-width: 90%;
     max-height: 90%;
-  }
-  
-  .close {
+}
+
+.close {
     position: absolute;
     top: 10px;
     right: 25px;
     color: white;
     font-size: 35px;
     cursor: pointer;
-  }
+}
+
+/* Page 3:Live2d illustrations */
+
+#main3 {
+    margin-left: 1.5em;
+    margin-right: 0.5em;
+}
+
+.image-grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.image-grid3 img {
+    width: 150px;
+    /* Change this size to your preference */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-grid3 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-grid3 img.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 90%;
+    /* Limit the maximum width */
+    max-height: 90%;
+    /* Limit the maximum height */
+    height: auto;
+    /* Allow height to adjust based on width */
+    width: auto;
+    /* Allow width to adjust based on height */
+    transform: translate(-50%, -50%) scale(1);
+    /* Centering */
+    z-index: 1000;
+}
+
+/* to allow image to change when clicked on */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    /* Ensure it's above everything else */
+    display: none;
+    /* Hidden by default */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    display: flex;
+    /* Use flexbox for centering */
+}
+
+.full-size {
+    max-width: 90%;
+    /* Adjust max width for responsive design */
+    max-height: 90%;
+    /* Adjust max height for responsive design */
+    margin: auto;
+    /* Center image in flex container */
+}
+
+/* Page 4: Live2d Rigging */
+
+.main4 {
+    margin-left: 1.5em;
+    margin-right: 0.5em;
+    margin-top: -1em;
+    margin-bottom: 3em;
+}
+
+.page3-title {
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+    margin-left: -2em;
+    margin-right: -2em;
+    background-color: rgb(131, 105, 156, 0.75);
+}
+
+#Live2D-rigging-title {
+    font-size: 40px;
+}
+
+#subheading-3 {
+    font-weight: 200;
+}
+
+#vgen-link {
+    text-decoration: none;
+}
+
+#full-body {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 1em;
+    background-color: rgb(131, 105, 156);
+    margin-left: -1.20em;
+    margin-right: -1.20em;
+}
+
+/* Video grid container */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 20px;
+    /* Space between the videos */
+    padding: 20px;
+    /* Padding around the grid */
+}
+
+.video-grid video {
+    width: 100%;
+    /* Make videos responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 2px solid #ccc;
+    /* Optional styling for video border */
+    border-radius: 10px;
+    /* Rounded corners for the videos */
+}
+
+.sorry-sign {
+    text-align: center;
+}
+
+#half-body {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 1em;
+    background-color: rgb(131, 105, 156);
+    margin-left: -1.20em;
+    margin-right: -1.20em;
+}
+
+#chibi {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 1em;
+    background-color: rgb(131, 105, 156);
+    margin-left: -1.20em;
+    margin-right: -1.20em;
+}
+
+/* Page 5 */
+.contact-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}

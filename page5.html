@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <iframe src="audio.html" style="display:none;"></iframe>
+    </div>
+
+    <div class="sidebar">
+        <!-- sidebar content here -->
+        <img id="sidebar-image" src="Images/direction.png" alt="sidebar icon">
+        <nav>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="index.html" class="navbutton">Home</a>
+                </li>
+                <li>
+                    <a href="page1.html" class="navbutton">About Me</a>
+                </li>
+                <li>
+                    <a href="page2.html" class="navbutton">Illustrations</a>
+                </li>
+                <li>
+                    <a href="page3.html" class="navbutton">Live2d Illustrations</a>
+                </li>
+                <li>
+                    <a href="page4.html" class="navbutton">Live2d Rigging</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contact-container">
+        <h2>Contact Me!</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <h2>NennaVerse</h2>
+        <section>
+            <nav>
+                <ul class="footer-ul">
+                    <div id="footer-div" class="pure-g">
+                        <div id="footer1" class="pure-u-1-3">
+                            <li id="footer-home"><a href="index.html">Home</a></li>
+                            <li id="footer-about"><a href="page1.html">About Me</a></li>
+                        </div>
+
+                        <div id="footer2" class="pure-u-1-3">
+                            <li id="footer-ill"><a href="page2.html">Illustrations</a></li>
+                            <li id="footer-livill"><a href="page3.html">Live2d Illustrations</a></li>
+                        </div>
+
+                        <div id="footer3" class="pure-u-1-3">
+                            <li id="footer-liverig"><a href="page4.html">Live2d Rigging</a></li>
+                            <li id="footer-contact"><a href="page5.html">Contact us</a></li>
+                        </div>
+                    </div>
+
+                    <div>
+                        <nav>
+                            <ul>
+                                <li class="socials">
+                                    <a href="https://discord.com/users/1246253356838682635" target="_blank">
+                                        <img id="Discord" src="Images/discord_icon.png" alt="Discord Image"
+                                            width="30px">
+                                    </a>
+                                    <a href="https://x.com/ItsNennaVerse" target="_blank">
+                                        <img id="X" src="Images/twitter_icon.png" alt="X Image" width="30px">
+                                    </a>
+                                    <a href="https://vgen.co/ItsNennaVerse" target="_blank">
+                                        <img id="VGen" src="Images/VGen.png" alt="VGen Image" width="35px">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <p id="copyright">&copy; 2024 NennaVerse</p>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
